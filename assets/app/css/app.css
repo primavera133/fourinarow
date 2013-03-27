@@ -1,0 +1,227 @@
+@font-face {
+  font-family: 'Fresca';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fresca-Regular'), url(../fonts/freska-regular.woff) format('woff');
+}
+
+
+html {
+  font-size: 10px;
+  font-family: 'Fresca', sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 480px;
+
+  font-size: 1.6rem;
+  padding: 10px;
+  position: relative;
+
+  background: #fcecfc; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #fcecfc 0%, #fba6e1 50%, #fd89d7 51%, #ff7cd8 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#fcecfc), color-stop(50%,#fba6e1), color-stop(51%,#fd89d7), color-stop(100%,#ff7cd8)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(45deg,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(45deg,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(45deg,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* IE10+ */
+  background: linear-gradient(45deg,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+@media only screen 
+and (min-device-width : 321px) {
+  .wrapper {
+    width: 320px;
+    margin: 0 auto;
+
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0,0,0,.5);
+  }
+}
+
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow:2px 2px 2px rgba(0,0,0, .5);
+  color: #fff;
+
+}
+
+header {
+  background: #eee;
+  border-radius: 15px;
+  margin: 10px 0;
+  padding: 10px;
+  box-shadow: inset 2px 2px 2px rgba(0,0,0, .3);
+  text-align: center;
+}
+
+form p {
+  margin:4px 0;
+}
+
+form p:first-child {
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 10px 0;
+  width: 18%;
+}
+
+input[type=text] {
+  width: 3rem;
+  padding: 3px 5px;
+  margin: 5px;
+}
+
+input[type=checkbox] {
+  margin: 4px;
+  vertical-align: bottom;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+  background: #000;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  margin: 10px;
+  padding: 2px 10px
+}
+
+.player.one {
+  color: red;
+}
+.player.two {
+  color: blue;
+}
+
+
+
+table {
+  width: 100%;
+  border-width: 0px;
+  border-spacing: 0px;
+  border-style: none;
+  background: #fff;
+}
+td {
+  border: solid 1px #ddd;
+  padding: 5px;
+  background-color: "fff";
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  vertical-align: middle;
+  text-align: center;
+  height: 30px;
+}
+
+.player {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.question {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+td.player1 {
+  background: url(../img/spritex1.png) 7px 6px;
+}
+
+td.player2 {
+  background: url(../img/spritex1.png) -43px 6px;
+}
+
+td.player1 span,
+td.player2 span {
+  display: none;
+}
+
+
+
+
+.winner {
+  position: absolute;
+  top: 290px;
+  background: #fff;
+  width: 200px;
+  padding: 20px;
+  margin: 0 40px;
+
+  border: solid 3px #fcecfc;
+
+  font-size: 2.4rem;
+  display: none;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 2px 4px 4px rgba(0,0,0,.5);
+}
+
+.winner.won {
+  display: block;
+}
+
+.winner .player1,
+.winner .player2 {
+  display: none;
+}
+
+.winner .player1.won,
+.winner .player2.won {
+  display: inline;
+}
+
+.reset-game {
+  text-align: center;
+  margin: 30px 0 20px;
+}
+
+/* icons */
+.icon {
+  background-image: url(../img/spritex1.png);
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.icon.person {
+  background-position: 50px -47px;
+}
+
+.icon.robot {
+  background-position: 0 -47px;
+}
+
+
+/* retina icons */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-resolution: 2dppx) {
+
+  td.player1,
+  td.player2,
+  .icon {
+    background-image: url(../img/spritex2.png);
+    background-size: 100px 100px;
+  }
+}
