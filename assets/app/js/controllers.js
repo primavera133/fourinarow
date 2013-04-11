@@ -334,8 +334,8 @@ function MatteCtrl($scope, $timeout) {
                 cellIdx = chunk[y][1];
 
                 cell = $scope.board[rowIdx][cellIdx];
-                
-                if(cell.player !== lastPlayer) { //reset 
+
+                if(cell.player !== lastPlayer) { //reset
                     inARow = (cell.player !== null) ? 1 : 0;
                 }
 

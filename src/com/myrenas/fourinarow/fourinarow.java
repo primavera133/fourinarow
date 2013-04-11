@@ -20,6 +20,7 @@
 package com.myrenas.fourinarow;
 
 import android.os.Bundle;
+import android.view.WindowManager;
 import org.apache.cordova.*;
 
 public class fourinarow extends DroidGap
@@ -30,6 +31,7 @@ public class fourinarow extends DroidGap
         super.onCreate(savedInstanceState);
         // Set by <content src="index.html" /> in config.xml
         //super.loadUrl(Config.getStartUrl());
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         super.loadUrl("file:///android_asset/app/index.html");
     }
 }

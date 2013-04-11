@@ -1,3 +1,4 @@
 - icon
 - disable screen dimming/shutdown
 - nicer graphics on tablet
+- bug: 111X1-wins
