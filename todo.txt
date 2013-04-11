@@ -1,0 +1,3 @@
+- icon
+- disable screen dimming/shutdown
+- nicer graphics on tablet
