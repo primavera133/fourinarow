@@ -1,0 +1,332 @@
+com.myrenas.fourinarow.BuildConfig
+com.myrenas.fourinarow.R
+com.myrenas.fourinarow.R$attr
+com.myrenas.fourinarow.R$drawable
+com.myrenas.fourinarow.R$layout
+com.myrenas.fourinarow.R$string
+com.myrenas.fourinarow.R$xml
+org.apache.cordova.App:
+    211:211:public boolean isBackbuttonOverridden()
+org.apache.cordova.AudioHandler:
+    312:322:public void setAudioOutputDevice(int)
+    331:339:public int getAudioOutputDevice()
+org.apache.cordova.AudioPlayer:
+    private static final java.lang.String LOG_TAG
+org.apache.cordova.AuthenticationToken:
+    44:45:public void setUserName(java.lang.String)
+    63:64:public void setPassword(java.lang.String)
+org.apache.cordova.BatteryListener:
+    private static final java.lang.String LOG_TAG
+org.apache.cordova.BuildConfig:
+    public static final boolean DEBUG
+org.apache.cordova.CameraLauncher:
+    private static final int DATA_URL
+    private static final int FILE_URI
+    private static final int NATIVE_URI
+    private static final int PHOTOLIBRARY
+    private static final int CAMERA
+    private static final int SAVEDPHOTOALBUM
+    private static final int PICTURE
+    private static final int VIDEO
+    private static final int ALLMEDIA
+    private static final int JPEG
+    private static final int PNG
+    private static final java.lang.String GET_PICTURE
+    private static final java.lang.String GET_VIDEO
+    private static final java.lang.String GET_All
+    private static final java.lang.String LOG_TAG
+org.apache.cordova.Capture:
+    private static final java.lang.String VIDEO_3GPP
+    private static final java.lang.String VIDEO_MP4
+    private static final java.lang.String AUDIO_3GPP
+    private static final java.lang.String IMAGE_JPEG
+    private static final int CAPTURE_AUDIO
+    private static final int CAPTURE_IMAGE
+    private static final int CAPTURE_VIDEO
+    private static final java.lang.String LOG_TAG
+    private static final int CAPTURE_INTERNAL_ERR
+    private static final int CAPTURE_NO_MEDIA_FILES
+org.apache.cordova.CompassListener:
+    int accuracy
+org.apache.cordova.Config:
+    public static final java.lang.String TAG
+    60:63:public static void init()
+    196:201:public static void addWhiteListEntry(java.lang.String,boolean)
+    268:271:public static java.lang.String getStartUrl()
+org.apache.cordova.ContactAccessorSdk5:
+    private static final long MAX_PHOTO_SIZE
+    private static final java.lang.String EMAIL_REGEXP
+    2139:2171:private java.lang.String getImType(int)
+org.apache.cordova.ContactManager:
+    private static final java.lang.String LOG_TAG
+    public static final int UNKNOWN_ERROR
+    public static final int INVALID_ARGUMENT_ERROR
+    public static final int TIMEOUT_ERROR
+    public static final int PENDING_OPERATION_ERROR
+    public static final int IO_ERROR
+    public static final int NOT_SUPPORTED_ERROR
+    public static final int PERMISSION_DENIED_ERROR
+org.apache.cordova.CordovaArgs:
+    36:36:public java.lang.Object get(int)
+    40:40:public boolean getBoolean(int)
+    44:44:public double getDouble(int)
+    48:48:public int getInt(int)
+    52:52:public org.json.JSONArray getJSONArray(int)
+    56:56:public java.lang.Object getJSONObject(int)
+    60:60:public long getLong(int)
+    69:69:public java.lang.Object opt(int)
+    73:73:public boolean optBoolean(int)
+    77:77:public double optDouble(int)
+    81:81:public int optInt(int)
+    85:85:public org.json.JSONArray optJSONArray(int)
+    89:89:public java.lang.Object optJSONObject(int)
+    93:93:public long optLong(int)
+    97:97:public java.lang.String optString(int)
+org.apache.cordova.CordovaChromeClient:
+    public static final int FILECHOOSER_RESULTCODE
+    private static final java.lang.String LOG_TAG
+    71:73:public CordovaChromeClient(org.apache.cordova.api.CordovaInterface)
+    382:383:public void openFileChooser(android.webkit.ValueCallback)
+    386:387:public void openFileChooser(android.webkit.ValueCallback,java.lang.String)
+    391:397:public void openFileChooser(android.webkit.ValueCallback,java.lang.String,java.lang.String)
+org.apache.cordova.CordovaWebView:
+    public static final java.lang.String TAG
+    149:162:public CordovaWebView(android.content.Context,android.util.AttributeSet)
+    173:185:public CordovaWebView(android.content.Context,android.util.AttributeSet,int)
+    197:210:public CordovaWebView(android.content.Context,android.util.AttributeSet,int,boolean)
+    214:222:private void initWebViewClient(org.apache.cordova.api.CordovaInterface)
+    381:391:public void loadUrl(java.lang.String,int)
+    487:501:public void loadUrlIntoView(java.lang.String,int)
+    805:813:public void bindButton(int,boolean,boolean)
+    817:817:public boolean isBackButtonBound()
+    889:889:public boolean isPaused()
+    893:893:public boolean hadKeyEvent()
+    995:996:public void storeResult(int,int,android.content.Intent)
+org.apache.cordova.CordovaWebView$ActivityResult:
+    int request
+    int result
+    android.content.Intent incoming
+    final synthetic org.apache.cordova.CordovaWebView this$0
+    108:112:public CordovaWebView$ActivityResult(org.apache.cordova.CordovaWebView,int,int,android.content.Intent)
+org.apache.cordova.CordovaWebView$Level16Apis:
+    899:899:private CordovaWebView$Level16Apis()
+org.apache.cordova.CordovaWebViewClient:
+    private static final java.lang.String TAG
+    private static final java.lang.String CORDOVA_EXEC_URL_PREFIX
+    63:65:public CordovaWebViewClient(org.apache.cordova.api.CordovaInterface)
+    91:104:private void handleExecUrl(java.lang.String)
+    421:428:public void setAuthenticationToken(org.apache.cordova.AuthenticationToken,java.lang.String,java.lang.String)
+    439:439:public org.apache.cordova.AuthenticationToken removeAuthenticationToken(java.lang.String,java.lang.String)
+    482:483:public void clearAuthenticationTokens()
+org.apache.cordova.Device:
+    public static final java.lang.String TAG
+    147:147:public java.lang.String getPlatform()
+    166:166:public java.lang.String getCordovaVersion()
+    191:192:public java.lang.String getSDKVersion()
+    196:197:public java.lang.String getTimeZoneID()
+org.apache.cordova.DirectoryManager:
+    private static final java.lang.String LOG_TAG
+org.apache.cordova.DroidGap:
+    protected org.apache.cordova.CordovaWebViewClient webViewClient
+    private int lastRequestCode
+    private java.lang.Object responseCode
+    private android.content.Intent lastIntent
+    private java.lang.Object lastResponseCode
+    private java.lang.Object LOG_TAG
+    205:208:public void setAuthenticationToken(org.apache.cordova.AuthenticationToken,java.lang.String,java.lang.String)
+    219:222:public org.apache.cordova.AuthenticationToken removeAuthenticationToken(java.lang.String,java.lang.String)
+    240:243:public org.apache.cordova.AuthenticationToken getAuthenticationToken(java.lang.String,java.lang.String)
+    250:253:public void clearAuthenticationTokens()
+    430:438:public void loadUrl(java.lang.String,int)
+    446:447:public void cancelLoadUrl()
+    453:457:public void clearCache()
+    463:464:public void clearHistory()
+    472:475:public boolean backHistory()
+    570:583:public double getDoubleProperty(java.lang.String,double)
+    593:595:public void setBooleanProperty(java.lang.String,boolean)
+    604:606:public void setIntegerProperty(java.lang.String,int)
+    615:617:public void setStringProperty(java.lang.String,java.lang.String)
+    626:628:public void setDoubleProperty(java.lang.String,double)
+    738:741:public void addService(java.lang.String,java.lang.String)
+    750:753:public void sendJavascript(java.lang.String)
+    860:861:public void setActivityResultCallback(org.apache.cordova.api.CordovaPlugin)
+    943:943:public boolean isUrlWhiteListed(java.lang.String)
+    974:975:public android.content.Context getContext()
+    989:992:public void showWebPage(java.lang.String,boolean,boolean,java.util.HashMap)
+org.apache.cordova.FileProgressResult:
+    34:34:public boolean getLengthComputable()
+    42:42:public long getLoaded()
+    50:50:public long getTotal()
+org.apache.cordova.FileTransfer:
+    private static final java.lang.String LOG_TAG
+    private static final java.lang.String LINE_START
+    private static final java.lang.String LINE_END
+    private static final java.lang.String BOUNDARY
+    private static final int MAX_BUFFER_SIZE
+org.apache.cordova.FileUploadResult:
+    35:35:public long getBytesSent()
+    43:43:public int getResponseCode()
+    51:51:public java.lang.String getResponse()
+    59:59:public java.lang.String getObjectId()
+    63:64:public void setObjectId(java.lang.String)
+org.apache.cordova.FileUtils:
+    private static final java.lang.String LOG_TAG
+    private static final java.lang.String _DATA
+    java.io.FileReader f_in
+    java.io.FileWriter f_out
+    940:952:public boolean isSynch(java.lang.String)
+org.apache.cordova.Globalization:
+    public static final java.lang.String GETLOCALENAME
+    public static final java.lang.String DATETOSTRING
+    public static final java.lang.String STRINGTODATE
+    public static final java.lang.String GETDATEPATTERN
+    public static final java.lang.String GETDATENAMES
+    public static final java.lang.String ISDAYLIGHTSAVINGSTIME
+    public static final java.lang.String GETFIRSTDAYOFWEEK
+    public static final java.lang.String NUMBERTOSTRING
+    public static final java.lang.String STRINGTONUMBER
+    public static final java.lang.String GETNUMBERPATTERN
+    public static final java.lang.String GETCURRENCYPATTERN
+    public static final java.lang.String GETPREFERREDLANGUAGE
+    public static final java.lang.String OPTIONS
+    public static final java.lang.String FORMATLENGTH
+    public static final java.lang.String MEDIUM
+    public static final java.lang.String LONG
+    public static final java.lang.String FULL
+    public static final java.lang.String SELECTOR
+    public static final java.lang.String DATE
+    public static final java.lang.String TIME
+    public static final java.lang.String DATESTRING
+    public static final java.lang.String TYPE
+    public static final java.lang.String ITEM
+    public static final java.lang.String NARROW
+    public static final java.lang.String WIDE
+    public static final java.lang.String MONTHS
+    public static final java.lang.String DAYS
+    public static final java.lang.String NUMBER
+    public static final java.lang.String NUMBERSTRING
+    public static final java.lang.String PERCENT
+    public static final java.lang.String CURRENCY
+    public static final java.lang.String CURRENCYCODE
+org.apache.cordova.GlobalizationError:
+    private static final long serialVersionUID
+    public static final java.lang.String UNKNOWN_ERROR
+    public static final java.lang.String FORMATTING_ERROR
+    public static final java.lang.String PARSING_ERROR
+    public static final java.lang.String PATTERN_ERROR
+org.apache.cordova.HttpHandler:
+    34:47:protected java.lang.Boolean get(java.lang.String,java.lang.String)
+    55:62:private org.apache.http.HttpEntity getHttpEntity(java.lang.String)
+    71:85:private void writeToDisk(org.apache.http.HttpEntity,java.lang.String)
+org.apache.cordova.IceCreamCordovaWebViewClient:
+    36:37:public IceCreamCordovaWebViewClient(org.apache.cordova.api.CordovaInterface)
+org.apache.cordova.InAppBrowser:
+    private static final java.lang.String NULL
+    protected static final java.lang.String LOG_TAG
+    private static final java.lang.String SELF
+    private static final java.lang.String SYSTEM
+    private static final java.lang.String LOCATION
+    private static final java.lang.String EXIT_EVENT
+    private static final java.lang.String LOAD_START_EVENT
+    private static final java.lang.String LOAD_STOP_EVENT
+org.apache.cordova.LinearLayoutSoftKeyboardDetect:
+    private static final java.lang.String TAG
+org.apache.cordova.NativeToJsMessageQueue:
+    private static final java.lang.String LOG_TAG
+    private static final int DEFAULT_BRIDGE_MODE
+    private static final boolean FORCE_ENCODE_USING_EVAL
+    static final boolean ENABLE_LOCATION_CHANGE_EXEC_MODE
+    static final boolean DISABLE_EXEC_CHAINING
+    277:277:public boolean getPaused()
+org.apache.cordova.NativeToJsMessageQueue$PrivateApiBridgeMode:
+    private static final int EXECUTE_JS
+org.apache.cordova.NetworkManager:
+    public static final java.lang.String WIFI
+    public static final java.lang.String WIMAX
+    public static final java.lang.String MOBILE
+    public static final java.lang.String GSM
+    public static final java.lang.String GPRS
+    public static final java.lang.String EDGE
+    public static final java.lang.String CDMA
+    public static final java.lang.String UMTS
+    public static final java.lang.String HSPA
+    public static final java.lang.String HSUPA
+    public static final java.lang.String HSDPA
+    public static final java.lang.String ONEXRTT
+    public static final java.lang.String EHRPD
+    public static final java.lang.String LTE
+    public static final java.lang.String UMB
+    public static final java.lang.String HSPA_PLUS
+    public static final java.lang.String TYPE_UNKNOWN
+    public static final java.lang.String TYPE_ETHERNET
+    public static final java.lang.String TYPE_WIFI
+    public static final java.lang.String TYPE_2G
+    public static final java.lang.String TYPE_3G
+    public static final java.lang.String TYPE_4G
+    public static final java.lang.String TYPE_NONE
+    private static final java.lang.String LOG_TAG
+org.apache.cordova.Storage:
+    private static final java.lang.String ALTER
+    private static final java.lang.String CREATE
+    private static final java.lang.String DROP
+    private static final java.lang.String TRUNCATE
+org.apache.cordova.api.CallbackContext:
+    private static final java.lang.String LOG_TAG
+    private int changingThreads
+    28:28:public boolean isChangingThreads()
+org.apache.cordova.api.CordovaInterface:
+    public abstract void setActivityResultCallback(org.apache.cordova.api.CordovaPlugin)
+org.apache.cordova.api.CordovaPlugin:
+    public java.lang.String id
+org.apache.cordova.api.LOG:
+    public static final int VERBOSE
+    public static final int DEBUG
+    public static final int INFO
+    public static final int WARN
+    public static final int ERROR
+    46:48:public static void setLogLevel(int)
+    132:133:public static void v(java.lang.String,java.lang.String,java.lang.Throwable)
+    143:144:public static void d(java.lang.String,java.lang.String,java.lang.Throwable)
+    154:155:public static void i(java.lang.String,java.lang.String,java.lang.Throwable)
+    165:166:public static void w(java.lang.String,java.lang.String,java.lang.Throwable)
+    220:221:public static varargs void w(java.lang.String,java.lang.String,java.lang.Object[])
+    231:232:public static varargs void e(java.lang.String,java.lang.String,java.lang.Object[])
+org.apache.cordova.api.LegacyContext:
+    private static final java.lang.String LOG_TAG
+    45:46:public void cancelLoadUrl()
+    56:57:public android.content.Context getContext()
+    68:70:public void setActivityResultCallback(org.apache.cordova.api.CordovaPlugin)
+    80:82:public void startActivity(android.content.Intent)
+    86:87:public java.lang.Object getSystemService(java.lang.String)
+    92:93:public android.content.res.AssetManager getAssets()
+    98:100:public void runOnUiThread(java.lang.Runnable)
+    104:105:public android.content.Context getApplicationContext()
+    110:111:public android.content.pm.PackageManager getPackageManager()
+    116:117:public android.content.SharedPreferences getSharedPreferences(java.lang.String,int)
+    122:124:public void unregisterReceiver(android.content.BroadcastReceiver)
+    128:129:public android.content.res.Resources getResources()
+    134:135:public android.content.ComponentName startService(android.content.Intent)
+    140:141:public boolean bindService(android.content.Intent,android.content.ServiceConnection,int)
+    146:148:public void unbindService(android.content.ServiceConnection)
+org.apache.cordova.api.Plugin:
+    103:104:public void sendJavascript(java.lang.String)
+    124:125:public void success(org.apache.cordova.api.PluginResult,java.lang.String)
+    134:135:public void success(org.json.JSONObject,java.lang.String)
+    144:145:public void success(java.lang.String,java.lang.String)
+    154:155:public void error(org.apache.cordova.api.PluginResult,java.lang.String)
+    164:165:public void error(org.json.JSONObject,java.lang.String)
+    174:175:public void error(java.lang.String,java.lang.String)
+org.apache.cordova.api.PluginManager:
+    236:236:public boolean exec(java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)
+    267:269:public void addService(java.lang.String,java.lang.String)
+org.apache.cordova.api.PluginResult:
+    public static final int MESSAGE_TYPE_STRING
+    public static final int MESSAGE_TYPE_JSON
+    public static final int MESSAGE_TYPE_NUMBER
+    public static final int MESSAGE_TYPE_BOOLEAN
+    public static final int MESSAGE_TYPE_NULL
+    public static final int MESSAGE_TYPE_ARRAYBUFFER
+    112:112:public java.lang.String getJSONString()
+    118:127:public java.lang.String toCallbackString(java.lang.String)
+    132:132:public java.lang.String toSuccessCallbackString(java.lang.String)
+    137:137:public java.lang.String toErrorCallbackString(java.lang.String)

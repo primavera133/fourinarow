@@ -1,0 +1,1203 @@
+com.myrenas.fourinarow.fourinarow -> com.myrenas.fourinarow.fourinarow:
+    void onCreate(android.os.Bundle) -> onCreate
+org.apache.cordova.AccelListener -> org.apache.cordova.AccelListener:
+    int STOPPED -> a
+    int STARTING -> b
+    int RUNNING -> c
+    int ERROR_FAILED_TO_START -> d
+    float x -> e
+    float y -> f
+    float z -> g
+    long timestamp -> h
+    int status -> i
+    int accuracy -> j
+    android.hardware.SensorManager sensorManager -> k
+    android.hardware.Sensor mSensor -> l
+    org.apache.cordova.api.CallbackContext callbackContext -> m
+    void initialize(org.apache.cordova.api.CordovaInterface,org.apache.cordova.CordovaWebView) -> a
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void onDestroy() -> a
+    int start() -> c
+    void stop() -> d
+    void timeout() -> e
+    void onAccuracyChanged(android.hardware.Sensor,int) -> onAccuracyChanged
+    void onSensorChanged(android.hardware.SensorEvent) -> onSensorChanged
+    void onReset() -> b
+    void fail(int,java.lang.String) -> a
+    void win() -> f
+    void setStatus(int) -> a
+    org.json.JSONObject getAccelerationJSON() -> g
+    void access$000(org.apache.cordova.AccelListener) -> a
+org.apache.cordova.AccelListener$1 -> org.apache.cordova.a:
+    org.apache.cordova.AccelListener this$0 -> a
+    void run() -> run
+org.apache.cordova.App -> org.apache.cordova.App:
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void clearCache() -> c
+    void loadUrl(java.lang.String,org.json.JSONObject) -> a
+    void clearHistory() -> d
+    void backHistory() -> e
+    void overrideBackbutton(boolean) -> a
+    void overrideButton(java.lang.String,boolean) -> a
+    void exitApp() -> f
+org.apache.cordova.App$1 -> org.apache.cordova.b:
+    org.apache.cordova.App this$0 -> a
+    void run() -> run
+org.apache.cordova.App$2 -> org.apache.cordova.c:
+    org.apache.cordova.App this$0 -> a
+    void run() -> run
+org.apache.cordova.AudioHandler -> org.apache.cordova.AudioHandler:
+    java.lang.String TAG -> a
+    java.util.HashMap players -> b
+    java.util.ArrayList pausedForPhone -> c
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void onDestroy() -> a
+    void onReset() -> b
+    java.lang.Object onMessage(java.lang.String,java.lang.Object) -> a
+    boolean release(java.lang.String) -> f
+    void startRecordingAudio(java.lang.String,java.lang.String) -> a
+    void stopRecordingAudio(java.lang.String) -> a
+    void startPlayingAudio(java.lang.String,java.lang.String) -> b
+    void seekToAudio(java.lang.String,int) -> a
+    void pausePlayingAudio(java.lang.String) -> b
+    void stopPlayingAudio(java.lang.String) -> c
+    float getCurrentPositionAudio(java.lang.String) -> d
+    float getDurationAudio(java.lang.String,java.lang.String) -> c
+    void setVolume(java.lang.String,float) -> a
+org.apache.cordova.AudioPlayer -> org.apache.cordova.AudioPlayer:
+    int MEDIA_STATE -> a
+    int MEDIA_DURATION -> b
+    int MEDIA_POSITION -> c
+    int MEDIA_ERROR -> d
+    int MEDIA_ERR_NONE_ACTIVE -> e
+    int MEDIA_ERR_ABORTED -> f
+    int MEDIA_ERR_NETWORK -> g
+    int MEDIA_ERR_DECODE -> h
+    int MEDIA_ERR_NONE_SUPPORTED -> i
+    org.apache.cordova.AudioHandler handler -> j
+    java.lang.String id -> k
+    org.apache.cordova.AudioPlayer$MODE mode -> l
+    org.apache.cordova.AudioPlayer$STATE state -> m
+    java.lang.String audioFile -> n
+    float duration -> o
+    android.media.MediaRecorder recorder -> p
+    java.lang.String tempFile -> q
+    android.media.MediaPlayer player -> r
+    boolean prepareOnly -> s
+    int seekOnPrepared -> t
+    void destroy() -> a
+    void startRecording(java.lang.String) -> a
+    void moveFile(java.lang.String) -> b
+    void stopRecording() -> b
+    void startPlaying(java.lang.String) -> c
+    void seekToPlaying(int) -> a
+    void pausePlaying() -> c
+    void stopPlaying() -> d
+    void onCompletion(android.media.MediaPlayer) -> onCompletion
+    long getCurrentPosition() -> e
+    boolean isStreaming(java.lang.String) -> d
+    float getDuration(java.lang.String) -> e
+    void onPrepared(android.media.MediaPlayer) -> onPrepared
+    float getDurationInSeconds() -> g
+    boolean onError(android.media.MediaPlayer,int,int) -> onError
+    void setState(org.apache.cordova.AudioPlayer$STATE) -> a
+    void setMode(org.apache.cordova.AudioPlayer$MODE) -> a
+    int getState() -> f
+    void setVolume(float) -> a
+    boolean playMode() -> h
+    boolean readyPlayer(java.lang.String) -> f
+    void loadAudioFile(java.lang.String) -> g
+org.apache.cordova.AudioPlayer$1 -> org.apache.cordova.d:
+    int[] $SwitchMap$org$apache$cordova$AudioPlayer$MODE -> a
+    int[] $SwitchMap$org$apache$cordova$AudioPlayer$STATE -> b
+org.apache.cordova.AudioPlayer$MODE -> org.apache.cordova.AudioPlayer$MODE:
+    org.apache.cordova.AudioPlayer$MODE NONE -> a
+    org.apache.cordova.AudioPlayer$MODE PLAY -> b
+    org.apache.cordova.AudioPlayer$MODE RECORD -> c
+    org.apache.cordova.AudioPlayer$MODE[] $VALUES -> d
+    org.apache.cordova.AudioPlayer$MODE[] values() -> values
+    org.apache.cordova.AudioPlayer$MODE valueOf(java.lang.String) -> valueOf
+org.apache.cordova.AudioPlayer$STATE -> org.apache.cordova.AudioPlayer$STATE:
+    org.apache.cordova.AudioPlayer$STATE MEDIA_NONE -> a
+    org.apache.cordova.AudioPlayer$STATE MEDIA_STARTING -> b
+    org.apache.cordova.AudioPlayer$STATE MEDIA_RUNNING -> c
+    org.apache.cordova.AudioPlayer$STATE MEDIA_PAUSED -> d
+    org.apache.cordova.AudioPlayer$STATE MEDIA_STOPPED -> e
+    org.apache.cordova.AudioPlayer$STATE MEDIA_LOADING -> f
+    org.apache.cordova.AudioPlayer$STATE[] $VALUES -> g
+    org.apache.cordova.AudioPlayer$STATE[] values() -> values
+    org.apache.cordova.AudioPlayer$STATE valueOf(java.lang.String) -> valueOf
+org.apache.cordova.AuthenticationToken -> org.apache.cordova.AuthenticationToken:
+    java.lang.String userName -> a
+    java.lang.String password -> b
+    java.lang.String getUserName() -> a
+    java.lang.String getPassword() -> b
+org.apache.cordova.BatteryListener -> org.apache.cordova.BatteryListener:
+    android.content.BroadcastReceiver receiver -> a
+    org.apache.cordova.api.CallbackContext batteryCallbackContext -> b
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void onDestroy() -> a
+    void onReset() -> b
+    void removeBatteryListener() -> c
+    org.json.JSONObject getBatteryInfo(android.content.Intent) -> b
+    void updateBatteryInfo(android.content.Intent) -> c
+    void sendUpdate(org.json.JSONObject,boolean) -> a
+    void access$000(org.apache.cordova.BatteryListener,android.content.Intent) -> a
+org.apache.cordova.BatteryListener$1 -> org.apache.cordova.e:
+    org.apache.cordova.BatteryListener this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+org.apache.cordova.BuildConfig -> org.apache.cordova.BuildConfig:
+org.apache.cordova.CameraLauncher -> org.apache.cordova.CameraLauncher:
+    int mQuality -> b
+    int targetWidth -> c
+    int targetHeight -> d
+    android.net.Uri imageUri -> e
+    int encodingType -> f
+    int mediaType -> g
+    boolean saveToPhotoAlbum -> h
+    boolean correctOrientation -> i
+    org.apache.cordova.api.CallbackContext callbackContext -> a
+    int numPics -> j
+    android.media.MediaScannerConnection conn -> k
+    android.net.Uri scanMe -> l
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void takePicture(int,int) -> a
+    java.io.File createCaptureFile(int) -> a
+    void getImage(int,int) -> b
+    void onActivityResult(int,int,android.content.Intent) -> a
+    android.graphics.Bitmap getRotatedBitmap(int,android.graphics.Bitmap,org.apache.cordova.ExifHelper) -> a
+    void writeUncompressedImage(android.net.Uri) -> a
+    android.net.Uri getUriFromMediaStore() -> c
+    android.graphics.Bitmap getScaledBitmap(java.lang.String) -> b
+    int[] calculateAspectRatio(int,int) -> c
+    int calculateSampleSize(int,int,int,int) -> a
+    android.database.Cursor queryImgDB(android.net.Uri) -> b
+    void cleanup(int,android.net.Uri,android.net.Uri,android.graphics.Bitmap) -> a
+    void checkForDuplicateImage(int) -> b
+    android.net.Uri whichContentStore() -> d
+    void processPicture(android.graphics.Bitmap) -> a
+    void failPicture(java.lang.String) -> a
+    void scanForGallery(android.net.Uri) -> c
+    void onMediaScannerConnected() -> onMediaScannerConnected
+    void onScanCompleted(java.lang.String,android.net.Uri) -> onScanCompleted
+org.apache.cordova.Capture -> org.apache.cordova.Capture:
+    org.apache.cordova.api.CallbackContext callbackContext -> a
+    long limit -> b
+    double duration -> c
+    org.json.JSONArray results -> d
+    int numPics -> e
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    org.json.JSONObject getFormatData(java.lang.String,java.lang.String) -> a
+    org.json.JSONObject getImageData(java.lang.String,org.json.JSONObject) -> a
+    org.json.JSONObject getAudioVideoData(java.lang.String,org.json.JSONObject,boolean) -> a
+    void captureAudio() -> c
+    void captureImage() -> d
+    void captureVideo(double) -> a
+    void onActivityResult(int,int,android.content.Intent) -> a
+    org.json.JSONObject createMediaFile(android.net.Uri) -> a
+    org.json.JSONObject createErrorObject(int,java.lang.String) -> a
+    void fail(org.json.JSONObject) -> a
+    android.database.Cursor queryImgDB(android.net.Uri) -> b
+    void checkForDuplicateImage() -> e
+    android.net.Uri whichContentStore() -> f
+org.apache.cordova.CompassListener -> org.apache.cordova.CompassListener:
+    int STOPPED -> a
+    int STARTING -> b
+    int RUNNING -> c
+    int ERROR_FAILED_TO_START -> d
+    long TIMEOUT -> e
+    int status -> f
+    float heading -> g
+    long timeStamp -> h
+    long lastAccessTime -> i
+    android.hardware.SensorManager sensorManager -> k
+    android.hardware.Sensor mSensor -> j
+    org.apache.cordova.api.CallbackContext callbackContext -> l
+    void initialize(org.apache.cordova.api.CordovaInterface,org.apache.cordova.CordovaWebView) -> a
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void onDestroy() -> a
+    void onReset() -> b
+    int start() -> c
+    void stop() -> d
+    void onAccuracyChanged(android.hardware.Sensor,int) -> onAccuracyChanged
+    void timeout() -> h
+    void onSensorChanged(android.hardware.SensorEvent) -> onSensorChanged
+    int getStatus() -> e
+    float getHeading() -> f
+    void setTimeout(long) -> a
+    long getTimeout() -> g
+    void setStatus(int) -> a
+    org.json.JSONObject getCompassHeading() -> i
+    void access$000(org.apache.cordova.CompassListener) -> a
+org.apache.cordova.CompassListener$1 -> org.apache.cordova.f:
+    org.apache.cordova.CompassListener this$0 -> a
+    void run() -> run
+org.apache.cordova.Config -> org.apache.cordova.Config:
+    java.util.ArrayList whiteList -> a
+    java.util.HashMap whiteListCache -> b
+    java.lang.String startUrl -> c
+    org.apache.cordova.Config self -> d
+    void init(android.app.Activity) -> a
+    void _addWhiteListEntry(java.lang.String,boolean) -> a
+    boolean isUrlWhiteListed(java.lang.String) -> a
+org.apache.cordova.ContactAccessor -> org.apache.cordova.ContactAccessor:
+    java.lang.String LOG_TAG -> a
+    org.apache.cordova.api.CordovaInterface mApp -> b
+    android.webkit.WebView mView -> c
+    boolean isRequired(java.lang.String,java.util.HashMap) -> a
+    java.util.HashMap buildPopulationSet(org.json.JSONArray) -> a
+    java.lang.String getJsonString(org.json.JSONObject,java.lang.String) -> a
+    java.lang.String save(org.json.JSONObject) -> a
+    org.json.JSONArray search(org.json.JSONArray,org.json.JSONObject) -> a
+    org.json.JSONObject getContactById(java.lang.String) -> a
+    boolean remove(java.lang.String) -> b
+org.apache.cordova.ContactAccessor$WhereOptions -> org.apache.cordova.g:
+    java.lang.String where -> b
+    java.lang.String[] whereArgs -> c
+    org.apache.cordova.ContactAccessor this$0 -> a
+    void setWhere(java.lang.String) -> a
+    java.lang.String getWhere() -> a
+    void setWhereArgs(java.lang.String[]) -> a
+    java.lang.String[] getWhereArgs() -> b
+org.apache.cordova.ContactAccessorSdk5 -> org.apache.cordova.ContactAccessorSdk5:
+    java.util.Map dbMap -> d
+    org.json.JSONArray search(org.json.JSONArray,org.json.JSONObject) -> a
+    org.json.JSONObject getContactById(java.lang.String) -> a
+    org.json.JSONArray populateContactArray(int,java.util.HashMap,android.database.Cursor) -> a
+    org.apache.cordova.ContactAccessor$WhereOptions buildIdClause(java.util.Set,java.lang.String) -> a
+    org.json.JSONObject populateContact(org.json.JSONObject,org.json.JSONArray,org.json.JSONArray,org.json.JSONArray,org.json.JSONArray,org.json.JSONArray,org.json.JSONArray,org.json.JSONArray) -> a
+    org.apache.cordova.ContactAccessor$WhereOptions buildWhereClause(org.json.JSONArray,java.lang.String) -> a
+    boolean isWildCardSearch(org.json.JSONArray) -> b
+    org.json.JSONObject organizationQuery(android.database.Cursor) -> a
+    org.json.JSONObject addressQuery(android.database.Cursor) -> b
+    org.json.JSONObject nameQuery(android.database.Cursor) -> c
+    org.json.JSONObject phoneQuery(android.database.Cursor) -> d
+    org.json.JSONObject emailQuery(android.database.Cursor) -> e
+    org.json.JSONObject imQuery(android.database.Cursor) -> f
+    org.json.JSONObject websiteQuery(android.database.Cursor) -> g
+    org.json.JSONObject photoQuery(android.database.Cursor,java.lang.String) -> a
+    java.lang.String save(org.json.JSONObject) -> a
+    java.lang.String modifyContact(java.lang.String,org.json.JSONObject,java.lang.String,java.lang.String) -> a
+    void insertWebsite(java.util.ArrayList,org.json.JSONObject) -> a
+    void insertIm(java.util.ArrayList,org.json.JSONObject) -> b
+    void insertOrganization(java.util.ArrayList,org.json.JSONObject) -> c
+    void insertAddress(java.util.ArrayList,org.json.JSONObject) -> d
+    void insertEmail(java.util.ArrayList,org.json.JSONObject) -> e
+    void insertPhone(java.util.ArrayList,org.json.JSONObject) -> f
+    void insertPhoto(java.util.ArrayList,org.json.JSONObject) -> g
+    byte[] getPhotoBytes(java.lang.String) -> c
+    java.io.InputStream getPathFromUri(java.lang.String) -> d
+    java.lang.String createNewContact(org.json.JSONObject,java.lang.String,java.lang.String) -> a
+    boolean remove(java.lang.String) -> b
+    int getPhoneType(java.lang.String) -> e
+    java.lang.String getPhoneType(int) -> a
+    int getContactType(java.lang.String) -> f
+    java.lang.String getContactType(int) -> b
+    int getOrgType(java.lang.String) -> g
+    java.lang.String getOrgType(int) -> c
+    int getAddressType(java.lang.String) -> h
+    java.lang.String getAddressType(int) -> d
+    int getImType(java.lang.String) -> i
+org.apache.cordova.ContactManager -> org.apache.cordova.ContactManager:
+    org.apache.cordova.ContactAccessor contactAccessor -> a
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    org.apache.cordova.ContactAccessor access$000(org.apache.cordova.ContactManager) -> a
+org.apache.cordova.ContactManager$1 -> org.apache.cordova.h:
+    org.json.JSONArray val$filter -> a
+    org.json.JSONObject val$options -> b
+    org.apache.cordova.api.CallbackContext val$callbackContext -> c
+    org.apache.cordova.ContactManager this$0 -> d
+    void run() -> run
+org.apache.cordova.ContactManager$2 -> org.apache.cordova.i:
+    org.json.JSONObject val$contact -> a
+    org.apache.cordova.api.CallbackContext val$callbackContext -> b
+    org.apache.cordova.ContactManager this$0 -> c
+    void run() -> run
+org.apache.cordova.ContactManager$3 -> org.apache.cordova.j:
+    java.lang.String val$contactId -> a
+    org.apache.cordova.api.CallbackContext val$callbackContext -> b
+    org.apache.cordova.ContactManager this$0 -> c
+    void run() -> run
+org.apache.cordova.CordovaArgs -> org.apache.cordova.CordovaArgs:
+    org.json.JSONArray baseArgs -> a
+    java.lang.String getString(int) -> a
+    boolean isNull(int) -> b
+    byte[] getArrayBuffer(int) -> c
+org.apache.cordova.CordovaChromeClient -> org.apache.cordova.CordovaChromeClient:
+    java.lang.String TAG -> b
+    long MAX_QUOTA -> c
+    org.apache.cordova.api.CordovaInterface cordova -> d
+    org.apache.cordova.CordovaWebView appView -> e
+    android.view.View mVideoProgressView -> f
+    android.webkit.ValueCallback mUploadMessage -> a
+    void setWebView(org.apache.cordova.CordovaWebView) -> a
+    boolean onJsAlert(android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.JsResult) -> onJsAlert
+    boolean onJsConfirm(android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.JsResult) -> onJsConfirm
+    boolean onJsPrompt(android.webkit.WebView,java.lang.String,java.lang.String,java.lang.String,android.webkit.JsPromptResult) -> onJsPrompt
+    void onExceededDatabaseQuota(java.lang.String,java.lang.String,long,long,long,android.webkit.WebStorage$QuotaUpdater) -> onExceededDatabaseQuota
+    void onConsoleMessage(java.lang.String,int,java.lang.String) -> onConsoleMessage
+    boolean onConsoleMessage(android.webkit.ConsoleMessage) -> onConsoleMessage
+    void onGeolocationPermissionsShowPrompt(java.lang.String,android.webkit.GeolocationPermissions$Callback) -> onGeolocationPermissionsShowPrompt
+    void onShowCustomView(android.view.View,android.webkit.WebChromeClient$CustomViewCallback) -> onShowCustomView
+    void onHideCustomView() -> onHideCustomView
+    android.view.View getVideoLoadingProgressView() -> getVideoLoadingProgressView
+    android.webkit.ValueCallback getValueCallback() -> a
+org.apache.cordova.CordovaChromeClient$1 -> org.apache.cordova.k:
+    android.webkit.JsResult val$result -> a
+    org.apache.cordova.CordovaChromeClient this$0 -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.CordovaChromeClient$2 -> org.apache.cordova.l:
+    android.webkit.JsResult val$result -> a
+    org.apache.cordova.CordovaChromeClient this$0 -> b
+    void onCancel(android.content.DialogInterface) -> onCancel
+org.apache.cordova.CordovaChromeClient$3 -> org.apache.cordova.m:
+    android.webkit.JsResult val$result -> a
+    org.apache.cordova.CordovaChromeClient this$0 -> b
+    boolean onKey(android.content.DialogInterface,int,android.view.KeyEvent) -> onKey
+org.apache.cordova.CordovaChromeClient$4 -> org.apache.cordova.n:
+    android.webkit.JsResult val$result -> a
+    org.apache.cordova.CordovaChromeClient this$0 -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.CordovaChromeClient$5 -> org.apache.cordova.o:
+    android.webkit.JsResult val$result -> a
+    org.apache.cordova.CordovaChromeClient this$0 -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.CordovaChromeClient$6 -> org.apache.cordova.p:
+    android.webkit.JsResult val$result -> a
+    org.apache.cordova.CordovaChromeClient this$0 -> b
+    void onCancel(android.content.DialogInterface) -> onCancel
+org.apache.cordova.CordovaChromeClient$7 -> org.apache.cordova.q:
+    android.webkit.JsResult val$result -> a
+    org.apache.cordova.CordovaChromeClient this$0 -> b
+    boolean onKey(android.content.DialogInterface,int,android.view.KeyEvent) -> onKey
+org.apache.cordova.CordovaChromeClient$8 -> org.apache.cordova.r:
+    android.widget.EditText val$input -> a
+    android.webkit.JsPromptResult val$res -> b
+    org.apache.cordova.CordovaChromeClient this$0 -> c
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.CordovaChromeClient$9 -> org.apache.cordova.s:
+    android.webkit.JsPromptResult val$res -> a
+    org.apache.cordova.CordovaChromeClient this$0 -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.CordovaLocationListener -> org.apache.cordova.CordovaLocationListener:
+    int PERMISSION_DENIED -> a
+    int POSITION_UNAVAILABLE -> b
+    int TIMEOUT -> c
+    android.location.LocationManager locationManager -> d
+    org.apache.cordova.GeoBroker owner -> g
+    boolean running -> e
+    java.util.HashMap watches -> f
+    java.util.List callbacks -> h
+    java.lang.String TAG -> i
+    void fail(int,java.lang.String) -> a
+    void win(android.location.Location) -> a
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    int size() -> a
+    void addWatch(java.lang.String,org.apache.cordova.api.CallbackContext) -> a
+    void addCallback(org.apache.cordova.api.CallbackContext) -> a
+    void clearWatch(java.lang.String) -> a
+    void destroy() -> b
+    void start() -> c
+    void stop() -> d
+org.apache.cordova.CordovaWebView -> org.apache.cordova.CordovaWebView:
+    java.util.ArrayList keyDownCodes -> i
+    java.util.ArrayList keyUpCodes -> j
+    org.apache.cordova.api.PluginManager pluginManager -> a
+    boolean paused -> k
+    android.content.BroadcastReceiver receiver -> l
+    org.apache.cordova.api.CordovaInterface cordova -> m
+    org.apache.cordova.CordovaWebViewClient viewClient -> b
+    org.apache.cordova.CordovaChromeClient chromeClient -> n
+    java.lang.String url -> o
+    java.lang.String baseUrl -> c
+    java.util.Stack urls -> p
+    boolean useBrowserHistory -> d
+    int loadUrlTimeout -> e
+    boolean bound -> q
+    boolean handleButton -> r
+    long lastMenuEventTime -> s
+    org.apache.cordova.NativeToJsMessageQueue jsMessageQueue -> f
+    org.apache.cordova.ExposedJsApi exposedJsApi -> g
+    android.view.View mCustomView -> t
+    android.webkit.WebChromeClient$CustomViewCallback mCustomViewCallback -> u
+    org.apache.cordova.CordovaWebView$ActivityResult mResult -> v
+    android.widget.FrameLayout$LayoutParams COVER_SCREEN_GRAVITY_CENTER -> h
+    void setup() -> h
+    void updateUserAgentString() -> i
+    void exposeJsInterface() -> j
+    void setWebViewClient(org.apache.cordova.CordovaWebViewClient) -> setWebViewClient
+    void setWebChromeClient(org.apache.cordova.CordovaChromeClient) -> setWebChromeClient
+    org.apache.cordova.CordovaChromeClient getWebChromeClient() -> getWebChromeClient
+    void loadUrl(java.lang.String) -> loadUrl
+    void loadUrlIntoView(java.lang.String) -> a
+    void loadUrlNow(java.lang.String) -> b
+    void sendJavascript(java.lang.String) -> c
+    void sendPluginResult(org.apache.cordova.api.PluginResult,java.lang.String) -> a
+    void postMessage(java.lang.String,java.lang.Object) -> a
+    java.lang.String peekAtUrlStack() -> a
+    void pushUrl(java.lang.String) -> d
+    boolean backHistory() -> b
+    boolean canGoBack() -> canGoBack
+    void showWebPage(java.lang.String,boolean,boolean,java.util.HashMap) -> a
+    void loadConfiguration() -> k
+    java.lang.String getProperty(java.lang.String,java.lang.String) -> a
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onKeyUp(int,android.view.KeyEvent) -> onKeyUp
+    void bindButton(boolean) -> a
+    void bindButton(java.lang.String,boolean) -> a
+    void handlePause(boolean) -> b
+    void handleResume(boolean,boolean) -> a
+    void handleDestroy() -> c
+    void onNewIntent(android.content.Intent) -> a
+    void printBackForwardList() -> d
+    boolean startOfHistory() -> e
+    void showCustomView(android.view.View,android.webkit.WebChromeClient$CustomViewCallback) -> a
+    void hideCustomView() -> f
+    boolean isCustomViewShowing() -> g
+    android.webkit.WebBackForwardList restoreState(android.os.Bundle) -> restoreState
+    void access$000(org.apache.cordova.CordovaWebView) -> a
+    org.apache.cordova.api.CordovaInterface access$100(org.apache.cordova.CordovaWebView) -> b
+org.apache.cordova.CordovaWebView$1 -> org.apache.cordova.t:
+    org.apache.cordova.CordovaWebView this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+org.apache.cordova.CordovaWebView$2 -> org.apache.cordova.u:
+    org.apache.cordova.CordovaWebView val$me -> a
+    java.lang.String val$url -> b
+    org.apache.cordova.CordovaWebView this$0 -> c
+    void run() -> run
+org.apache.cordova.CordovaWebView$3 -> org.apache.cordova.v:
+    int val$loadUrlTimeoutValue -> a
+    org.apache.cordova.CordovaWebView val$me -> b
+    int val$currentLoadUrlTimeout -> c
+    java.lang.Runnable val$loadError -> d
+    org.apache.cordova.CordovaWebView this$0 -> e
+    void run() -> run
+org.apache.cordova.CordovaWebView$4 -> org.apache.cordova.w:
+    java.lang.Runnable val$timeoutCheck -> a
+    org.apache.cordova.CordovaWebView val$me -> b
+    java.lang.String val$url -> c
+    org.apache.cordova.CordovaWebView this$0 -> d
+    void run() -> run
+org.apache.cordova.CordovaWebView$ActivityResult -> org.apache.cordova.x:
+org.apache.cordova.CordovaWebView$Level16Apis -> org.apache.cordova.y:
+    void enableUniversalAccess(android.webkit.WebSettings) -> a
+org.apache.cordova.CordovaWebViewClient -> org.apache.cordova.CordovaWebViewClient:
+    org.apache.cordova.api.CordovaInterface cordova -> a
+    org.apache.cordova.CordovaWebView appView -> b
+    boolean doClearHistory -> c
+    java.util.Hashtable authenticationTokens -> d
+    void setWebView(org.apache.cordova.CordovaWebView) -> a
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+    void onReceivedHttpAuthRequest(android.webkit.WebView,android.webkit.HttpAuthHandler,java.lang.String,java.lang.String) -> onReceivedHttpAuthRequest
+    void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap) -> onPageStarted
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    void onReceivedError(android.webkit.WebView,int,java.lang.String,java.lang.String) -> onReceivedError
+    void onReceivedSslError(android.webkit.WebView,android.webkit.SslErrorHandler,android.net.http.SslError) -> onReceivedSslError
+    void doUpdateVisitedHistory(android.webkit.WebView,java.lang.String,boolean) -> doUpdateVisitedHistory
+    org.apache.cordova.AuthenticationToken getAuthenticationToken(java.lang.String,java.lang.String) -> a
+org.apache.cordova.CordovaWebViewClient$1 -> org.apache.cordova.z:
+    org.apache.cordova.CordovaWebViewClient this$0 -> a
+    void run() -> run
+org.apache.cordova.CordovaWebViewClient$1$1 -> org.apache.cordova.aa:
+    org.apache.cordova.CordovaWebViewClient$1 this$1 -> a
+    void run() -> run
+org.apache.cordova.Device -> org.apache.cordova.Device:
+    java.lang.String cordovaVersion -> a
+    java.lang.String platform -> b
+    java.lang.String uuid -> c
+    android.content.BroadcastReceiver telephonyReceiver -> d
+    void initialize(org.apache.cordova.api.CordovaInterface,org.apache.cordova.CordovaWebView) -> a
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void onDestroy() -> a
+    void initTelephonyReceiver() -> g
+    java.lang.String getUuid() -> c
+    java.lang.String getModel() -> d
+    java.lang.String getProductName() -> e
+    java.lang.String getOSVersion() -> f
+org.apache.cordova.Device$1 -> org.apache.cordova.ab:
+    org.apache.cordova.Device this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+org.apache.cordova.DirectoryManager -> org.apache.cordova.DirectoryManager:
+    boolean testFileExists(java.lang.String) -> a
+    long getFreeDiskSpace(boolean) -> a
+    long freeSpaceCalculation(java.lang.String) -> b
+    boolean testSaveLocationExists() -> a
+    java.io.File constructFilePaths(java.lang.String,java.lang.String) -> a
+    java.lang.String getTempDirectoryPath(android.content.Context) -> a
+org.apache.cordova.DroidGap -> org.apache.cordova.DroidGap:
+    java.lang.String TAG -> a
+    org.apache.cordova.CordovaWebView appView -> b
+    android.widget.LinearLayout root -> c
+    boolean cancelLoadUrl -> d
+    android.app.ProgressDialog spinnerDialog -> e
+    java.util.concurrent.ExecutorService threadPool -> m
+    int ACTIVITY_STARTING -> n
+    int ACTIVITY_RUNNING -> o
+    int ACTIVITY_EXITING -> p
+    int activityState -> q
+    org.apache.cordova.api.CordovaPlugin activityResultCallback -> f
+    boolean activityResultKeepRunning -> g
+    int backgroundColor -> r
+    int splashscreen -> h
+    int splashscreenTime -> i
+    int loadUrlTimeoutValue -> j
+    boolean keepRunning -> k
+    java.lang.String initCallbackClass -> s
+    android.app.Dialog splashDialog -> l
+    void onCreate(android.os.Bundle) -> onCreate
+    android.app.Activity getActivity() -> a
+    void init() -> b
+    void init(org.apache.cordova.CordovaWebView,org.apache.cordova.CordovaWebViewClient,org.apache.cordova.CordovaChromeClient) -> a
+    void loadUrl(java.lang.String) -> a
+    void loadSpinner() -> c
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    boolean getBooleanProperty(java.lang.String,boolean) -> a
+    int getIntegerProperty(java.lang.String,int) -> a
+    java.lang.String getStringProperty(java.lang.String,java.lang.String) -> a
+    void onPause() -> onPause
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void onResume() -> onResume
+    void onDestroy() -> onDestroy
+    void postMessage(java.lang.String,java.lang.Object) -> a
+    void spinnerStart(java.lang.String,java.lang.String) -> b
+    void spinnerStop() -> d
+    void endActivity() -> e
+    void startActivityForResult(org.apache.cordova.api.CordovaPlugin,android.content.Intent,int) -> a
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onReceivedError(int,java.lang.String,java.lang.String) -> a
+    void displayError(java.lang.String,java.lang.String,java.lang.String,boolean) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void removeSplashScreen() -> f
+    void showSplashScreen(int) -> a
+    boolean onKeyUp(int,android.view.KeyEvent) -> onKeyUp
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    java.lang.Object onMessage(java.lang.String,java.lang.Object) -> b
+    java.util.concurrent.ExecutorService getThreadPool() -> g
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+org.apache.cordova.DroidGap$1 -> org.apache.cordova.ac:
+    org.apache.cordova.DroidGap val$me -> a
+    org.apache.cordova.DroidGap this$0 -> b
+    void onCancel(android.content.DialogInterface) -> onCancel
+org.apache.cordova.DroidGap$2 -> org.apache.cordova.ad:
+    org.apache.cordova.DroidGap val$me -> a
+    java.lang.String val$errorUrl -> b
+    org.apache.cordova.DroidGap this$0 -> c
+    void run() -> run
+org.apache.cordova.DroidGap$3 -> org.apache.cordova.ae:
+    boolean val$exit -> a
+    org.apache.cordova.DroidGap val$me -> b
+    java.lang.String val$description -> c
+    java.lang.String val$failingUrl -> d
+    org.apache.cordova.DroidGap this$0 -> e
+    void run() -> run
+org.apache.cordova.DroidGap$4 -> org.apache.cordova.af:
+    org.apache.cordova.DroidGap val$me -> a
+    java.lang.String val$message -> b
+    java.lang.String val$title -> c
+    java.lang.String val$button -> d
+    boolean val$exit -> e
+    org.apache.cordova.DroidGap this$0 -> f
+    void run() -> run
+org.apache.cordova.DroidGap$4$1 -> org.apache.cordova.ag:
+    org.apache.cordova.DroidGap$4 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.DroidGap$5 -> org.apache.cordova.ah:
+    org.apache.cordova.DroidGap val$that -> a
+    int val$time -> b
+    org.apache.cordova.DroidGap this$0 -> c
+    void run() -> run
+org.apache.cordova.DroidGap$5$1 -> org.apache.cordova.ai:
+    org.apache.cordova.DroidGap$5 this$1 -> a
+    void run() -> run
+org.apache.cordova.Echo -> org.apache.cordova.Echo:
+    boolean execute(java.lang.String,org.apache.cordova.CordovaArgs,org.apache.cordova.api.CallbackContext) -> a
+org.apache.cordova.Echo$1 -> org.apache.cordova.aj:
+    org.apache.cordova.api.CallbackContext val$callbackContext -> a
+    java.lang.String val$result -> b
+    org.apache.cordova.Echo this$0 -> c
+    void run() -> run
+org.apache.cordova.ExifHelper -> org.apache.cordova.ExifHelper:
+    java.lang.String aperture -> a
+    java.lang.String datetime -> b
+    java.lang.String exposureTime -> c
+    java.lang.String flash -> d
+    java.lang.String focalLength -> e
+    java.lang.String gpsAltitude -> f
+    java.lang.String gpsAltitudeRef -> g
+    java.lang.String gpsDateStamp -> h
+    java.lang.String gpsLatitude -> i
+    java.lang.String gpsLatitudeRef -> j
+    java.lang.String gpsLongitude -> k
+    java.lang.String gpsLongitudeRef -> l
+    java.lang.String gpsProcessingMethod -> m
+    java.lang.String gpsTimestamp -> n
+    java.lang.String iso -> o
+    java.lang.String make -> p
+    java.lang.String model -> q
+    java.lang.String orientation -> r
+    java.lang.String whiteBalance -> s
+    android.media.ExifInterface inFile -> t
+    android.media.ExifInterface outFile -> u
+    void createInFile(java.lang.String) -> a
+    void createOutFile(java.lang.String) -> b
+    void readExifData() -> a
+    void writeExifData() -> b
+    int getOrientation() -> c
+    void resetOrientation() -> d
+org.apache.cordova.ExposedJsApi -> org.apache.cordova.ak:
+    org.apache.cordova.api.PluginManager pluginManager -> a
+    org.apache.cordova.NativeToJsMessageQueue jsMessageQueue -> b
+    java.lang.String exec(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    void setNativeToJsBridgeMode(int) -> a
+    java.lang.String retrieveJsMessages() -> a
+org.apache.cordova.FileProgressResult -> org.apache.cordova.FileProgressResult:
+    boolean lengthComputable -> a
+    long loaded -> b
+    long total -> c
+    void setLengthComputable(boolean) -> a
+    void setLoaded(long) -> a
+    void setTotal(long) -> b
+    org.json.JSONObject toJSONObject() -> a
+org.apache.cordova.FileTransfer -> org.apache.cordova.FileTransfer:
+    int FILE_NOT_FOUND_ERR -> a
+    int INVALID_URL_ERR -> b
+    int CONNECTION_ERR -> c
+    int ABORTED_ERR -> d
+    java.util.HashMap activeRequests -> e
+    javax.net.ssl.HostnameVerifier DO_NOT_VERIFY -> f
+    javax.net.ssl.TrustManager[] trustAllCerts -> g
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void upload(java.lang.String,java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void safeClose(java.io.Closeable) -> b
+    java.io.InputStream getInputStream(java.net.URLConnection) -> b
+    javax.net.ssl.SSLSocketFactory trustAllHosts(javax.net.ssl.HttpsURLConnection) -> b
+    org.json.JSONObject createFileTransferError(int,java.lang.String,java.lang.String,java.net.URLConnection) -> b
+    org.json.JSONObject createFileTransferError(int,java.lang.String,java.lang.String,java.lang.Integer) -> a
+    java.lang.String getArgument(org.json.JSONArray,int,java.lang.String) -> a
+    void download(java.lang.String,java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> b
+    java.io.InputStream getPathFromUri(java.lang.String) -> a
+    java.io.File getFileFromPath(java.lang.String) -> b
+    void abort(java.lang.String) -> c
+    javax.net.ssl.SSLSocketFactory access$000(javax.net.ssl.HttpsURLConnection) -> a
+    javax.net.ssl.HostnameVerifier access$100() -> c
+    java.io.InputStream access$200(org.apache.cordova.FileTransfer,java.lang.String) -> a
+    void access$300(java.io.Closeable) -> a
+    java.io.InputStream access$400(java.net.URLConnection) -> a
+    org.json.JSONObject access$500(int,java.lang.String,java.lang.String,java.net.URLConnection) -> a
+    java.util.HashMap access$600() -> d
+    java.io.File access$700(org.apache.cordova.FileTransfer,java.lang.String) -> b
+org.apache.cordova.FileTransfer$1 -> org.apache.cordova.al:
+    org.apache.cordova.FileTransfer$RequestContext val$context -> a
+    boolean val$useHttps -> b
+    boolean val$trustEveryone -> c
+    java.net.URL val$url -> d
+    java.lang.String val$target -> e
+    org.json.JSONObject val$headers -> f
+    org.json.JSONObject val$params -> g
+    java.lang.String val$fileKey -> h
+    java.lang.String val$fileName -> i
+    java.lang.String val$mimeType -> j
+    java.lang.String val$source -> k
+    boolean val$chunkedMode -> l
+    java.lang.String val$objectId -> m
+    org.apache.cordova.FileTransfer this$0 -> n
+    void run() -> run
+org.apache.cordova.FileTransfer$2 -> org.apache.cordova.am:
+    boolean verify(java.lang.String,javax.net.ssl.SSLSession) -> verify
+org.apache.cordova.FileTransfer$3 -> org.apache.cordova.an:
+    java.security.cert.X509Certificate[] getAcceptedIssuers() -> getAcceptedIssuers
+    void checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkClientTrusted
+    void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkServerTrusted
+org.apache.cordova.FileTransfer$4 -> org.apache.cordova.ao:
+    org.apache.cordova.FileTransfer$RequestContext val$context -> a
+    java.lang.String val$target -> b
+    boolean val$useHttps -> c
+    boolean val$trustEveryone -> d
+    java.net.URL val$url -> e
+    java.lang.String val$source -> f
+    java.lang.String val$objectId -> g
+    org.apache.cordova.FileTransfer this$0 -> h
+    void run() -> run
+org.apache.cordova.FileTransfer$5 -> org.apache.cordova.ap:
+    org.apache.cordova.FileTransfer$RequestContext val$context -> a
+    org.apache.cordova.FileTransfer this$0 -> b
+    void run() -> run
+org.apache.cordova.FileTransfer$DoneHandlerInputStream -> org.apache.cordova.aq:
+    boolean done -> a
+    int read() -> read
+    int read(byte[]) -> read
+    int read(byte[],int,int) -> read
+org.apache.cordova.FileTransfer$RequestContext -> org.apache.cordova.ar:
+    java.lang.String source -> a
+    java.lang.String target -> b
+    java.io.File targetFile -> c
+    org.apache.cordova.api.CallbackContext callbackContext -> d
+    java.io.InputStream currentInputStream -> e
+    java.io.OutputStream currentOutputStream -> f
+    boolean aborted -> g
+    void sendPluginResult(org.apache.cordova.api.PluginResult) -> a
+org.apache.cordova.FileUploadResult -> org.apache.cordova.FileUploadResult:
+    long bytesSent -> a
+    int responseCode -> b
+    java.lang.String response -> c
+    java.lang.String objectId -> d
+    void setBytesSent(long) -> a
+    void setResponseCode(int) -> a
+    void setResponse(java.lang.String) -> a
+    org.json.JSONObject toJSONObject() -> a
+org.apache.cordova.FileUtils -> org.apache.cordova.FileUtils:
+    int NOT_FOUND_ERR -> a
+    int SECURITY_ERR -> b
+    int ABORT_ERR -> c
+    int NOT_READABLE_ERR -> d
+    int ENCODING_ERR -> e
+    int NO_MODIFICATION_ALLOWED_ERR -> f
+    int INVALID_STATE_ERR -> g
+    int SYNTAX_ERR -> h
+    int INVALID_MODIFICATION_ERR -> i
+    int QUOTA_EXCEEDED_ERR -> j
+    int TYPE_MISMATCH_ERR -> k
+    int PATH_EXISTS_ERR -> l
+    int TEMPORARY -> m
+    int PERSISTENT -> n
+    int RESOURCE -> o
+    int APPLICATION -> p
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void notifyDelete(java.lang.String) -> c
+    org.json.JSONObject resolveLocalFileSystemURI(java.lang.String) -> d
+    org.json.JSONArray readEntries(java.lang.String) -> f
+    org.json.JSONObject transferTo(java.lang.String,java.lang.String,java.lang.String,boolean) -> a
+    java.io.File createDestination(java.lang.String,java.io.File,java.io.File) -> a
+    org.json.JSONObject copyFile(java.io.File,java.io.File) -> a
+    void copyAction(java.io.File,java.io.File) -> b
+    org.json.JSONObject copyDirectory(java.io.File,java.io.File) -> c
+    boolean isCopyOnItself(java.lang.String,java.lang.String) -> a
+    org.json.JSONObject moveFile(java.io.File,java.io.File) -> d
+    org.json.JSONObject moveDirectory(java.io.File,java.io.File) -> e
+    boolean removeRecursively(java.lang.String) -> g
+    boolean removeDirRecursively(java.io.File) -> b
+    boolean remove(java.lang.String) -> h
+    org.json.JSONObject getFile(java.lang.String,java.lang.String,org.json.JSONObject,boolean) -> a
+    java.io.File createFileObject(java.lang.String,java.lang.String) -> b
+    org.json.JSONObject getParent(java.lang.String) -> i
+    boolean atRootDirectory(java.lang.String) -> j
+    java.lang.String stripFileProtocol(java.lang.String) -> a
+    java.io.File createFileObject(java.lang.String) -> k
+    long getMetadata(java.lang.String) -> l
+    org.json.JSONObject getFileMetadata(java.lang.String) -> m
+    org.json.JSONObject requestFileSystem(int) -> a
+    org.json.JSONObject getEntry(java.io.File) -> a
+    org.json.JSONObject getEntry(java.lang.String) -> n
+    java.lang.String readAsText(java.lang.String,java.lang.String,int,int) -> a
+    java.lang.String readAsDataURL(java.lang.String,int,int) -> a
+    java.lang.String getMimeType(java.lang.String) -> b
+    long write(java.lang.String,java.lang.String,int) -> a
+    long truncateFile(java.lang.String,long) -> a
+    java.io.InputStream getPathFromUri(java.lang.String) -> o
+    java.lang.String getRealPathFromURI(android.net.Uri,org.apache.cordova.api.CordovaInterface) -> a
+org.apache.cordova.GPSListener -> org.apache.cordova.GPSListener:
+    void start() -> c
+org.apache.cordova.GeoBroker -> org.apache.cordova.GeoBroker:
+    org.apache.cordova.GPSListener gpsListener -> a
+    org.apache.cordova.NetworkListener networkListener -> b
+    android.location.LocationManager locationManager -> c
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void clearWatch(java.lang.String) -> a
+    void getCurrentLocation(org.apache.cordova.api.CallbackContext,boolean) -> a
+    void addWatch(java.lang.String,org.apache.cordova.api.CallbackContext,boolean) -> a
+    void onDestroy() -> a
+    void onReset() -> b
+    org.json.JSONObject returnLocationJSON(android.location.Location) -> a
+    void win(android.location.Location,org.apache.cordova.api.CallbackContext) -> a
+    void fail(int,java.lang.String,org.apache.cordova.api.CallbackContext) -> a
+    boolean isGlobalListener(org.apache.cordova.CordovaLocationListener) -> a
+org.apache.cordova.Globalization -> org.apache.cordova.Globalization:
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    org.json.JSONObject getLocaleName() -> c
+    org.json.JSONObject getPreferredLanguage() -> d
+    org.json.JSONObject getDateToString(org.json.JSONArray) -> a
+    org.json.JSONObject getStringtoDate(org.json.JSONArray) -> b
+    org.json.JSONObject getDatePattern(org.json.JSONArray) -> c
+    org.json.JSONObject getDateNames(org.json.JSONArray) -> d
+    org.json.JSONObject getIsDayLightSavingsTime(org.json.JSONArray) -> e
+    org.json.JSONObject getFirstDayOfWeek(org.json.JSONArray) -> f
+    org.json.JSONObject getNumberToString(org.json.JSONArray) -> g
+    org.json.JSONObject getStringToNumber(org.json.JSONArray) -> h
+    org.json.JSONObject getNumberPattern(org.json.JSONArray) -> i
+    org.json.JSONObject getCurrencyPattern(org.json.JSONArray) -> j
+    java.text.DecimalFormat getNumberFormatInstance(org.json.JSONArray) -> k
+org.apache.cordova.Globalization$1 -> org.apache.cordova.as:
+    java.util.Map val$namesMap -> a
+    org.apache.cordova.Globalization this$0 -> b
+    int compare(java.lang.String,java.lang.String) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+org.apache.cordova.GlobalizationError -> org.apache.cordova.GlobalizationError:
+    int error -> a
+    java.lang.String getErrorString() -> a
+    int getErrorCode() -> b
+    org.json.JSONObject toJson() -> c
+org.apache.cordova.HttpHandler -> org.apache.cordova.HttpHandler:
+org.apache.cordova.IceCreamCordovaWebViewClient -> org.apache.cordova.IceCreamCordovaWebViewClient:
+    android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,java.lang.String) -> shouldInterceptRequest
+    android.webkit.WebResourceResponse generateWebResourceResponse(java.lang.String) -> a
+org.apache.cordova.InAppBrowser -> org.apache.cordova.InAppBrowser:
+    long MAX_QUOTA -> a
+    android.app.Dialog dialog -> b
+    android.webkit.WebView inAppWebView -> c
+    android.widget.EditText edittext -> d
+    boolean showLocationBar -> e
+    org.apache.cordova.api.CallbackContext callbackContext -> f
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    java.util.HashMap parseFeature(java.lang.String) -> b
+    java.lang.String updateUrl(java.lang.String) -> c
+    java.lang.String openExternal(java.lang.String) -> a
+    void closeDialog() -> c
+    void goBack() -> d
+    void goForward() -> e
+    void navigate(java.lang.String) -> d
+    boolean getShowLocationBar() -> f
+    java.lang.String showWebPage(java.lang.String,java.util.HashMap) -> a
+    void sendUpdate(org.json.JSONObject,boolean) -> a
+    android.app.Dialog access$002(org.apache.cordova.InAppBrowser,android.app.Dialog) -> a
+    android.app.Dialog access$000(org.apache.cordova.InAppBrowser) -> a
+    void access$100(org.apache.cordova.InAppBrowser,org.json.JSONObject,boolean) -> a
+    void access$200(org.apache.cordova.InAppBrowser) -> b
+    void access$300(org.apache.cordova.InAppBrowser) -> c
+    android.widget.EditText access$402(org.apache.cordova.InAppBrowser,android.widget.EditText) -> a
+    android.widget.EditText access$400(org.apache.cordova.InAppBrowser) -> d
+    void access$500(org.apache.cordova.InAppBrowser,java.lang.String) -> a
+    void access$600(org.apache.cordova.InAppBrowser) -> e
+    android.webkit.WebView access$702(org.apache.cordova.InAppBrowser,android.webkit.WebView) -> a
+    android.webkit.WebView access$700(org.apache.cordova.InAppBrowser) -> f
+    boolean access$800(org.apache.cordova.InAppBrowser) -> g
+    long access$900(org.apache.cordova.InAppBrowser) -> h
+org.apache.cordova.InAppBrowser$1 -> org.apache.cordova.at:
+    java.lang.String val$url -> a
+    org.apache.cordova.CordovaWebView val$thatWebView -> b
+    org.apache.cordova.InAppBrowser this$0 -> c
+    int dpToPixels(int) -> a
+    void run() -> run
+org.apache.cordova.InAppBrowser$1$1 -> org.apache.cordova.au:
+    org.apache.cordova.InAppBrowser$1 this$1 -> a
+    void onDismiss(android.content.DialogInterface) -> onDismiss
+org.apache.cordova.InAppBrowser$1$2 -> org.apache.cordova.av:
+    org.apache.cordova.InAppBrowser$1 this$1 -> a
+    void onClick(android.view.View) -> onClick
+org.apache.cordova.InAppBrowser$1$3 -> org.apache.cordova.aw:
+    org.apache.cordova.InAppBrowser$1 this$1 -> a
+    void onClick(android.view.View) -> onClick
+org.apache.cordova.InAppBrowser$1$4 -> org.apache.cordova.ax:
+    org.apache.cordova.InAppBrowser$1 this$1 -> a
+    boolean onKey(android.view.View,int,android.view.KeyEvent) -> onKey
+org.apache.cordova.InAppBrowser$1$5 -> org.apache.cordova.ay:
+    org.apache.cordova.InAppBrowser$1 this$1 -> a
+    void onClick(android.view.View) -> onClick
+org.apache.cordova.InAppBrowser$InAppBrowserClient -> org.apache.cordova.InAppBrowser$InAppBrowserClient:
+    android.widget.EditText edittext -> a
+    org.apache.cordova.CordovaWebView webView -> b
+    org.apache.cordova.InAppBrowser this$0 -> c
+    void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap) -> onPageStarted
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+org.apache.cordova.InAppBrowser$InAppChromeClient -> org.apache.cordova.InAppBrowser$InAppChromeClient:
+    org.apache.cordova.InAppBrowser this$0 -> a
+    void onExceededDatabaseQuota(java.lang.String,java.lang.String,long,long,long,android.webkit.WebStorage$QuotaUpdater) -> onExceededDatabaseQuota
+org.apache.cordova.LinearLayoutSoftKeyboardDetect -> org.apache.cordova.LinearLayoutSoftKeyboardDetect:
+    int oldHeight -> a
+    int oldWidth -> b
+    int screenWidth -> c
+    int screenHeight -> d
+    org.apache.cordova.DroidGap app -> e
+    void onMeasure(int,int) -> onMeasure
+org.apache.cordova.NativeToJsMessageQueue -> org.apache.cordova.NativeToJsMessageQueue:
+    int MAX_PAYLOAD_SIZE -> a
+    int activeListenerIndex -> b
+    boolean paused -> c
+    java.util.LinkedList queue -> d
+    org.apache.cordova.NativeToJsMessageQueue$BridgeMode[] registeredListeners -> e
+    org.apache.cordova.api.CordovaInterface cordova -> f
+    org.apache.cordova.CordovaWebView webView -> g
+    void setBridgeMode(int) -> a
+    void reset() -> a
+    int calculatePackedMessageLength(org.apache.cordova.NativeToJsMessageQueue$JsMessage) -> a
+    void packMessage(org.apache.cordova.NativeToJsMessageQueue$JsMessage,java.lang.StringBuilder) -> a
+    java.lang.String popAndEncode() -> b
+    java.lang.String popAndEncodeAsJs() -> c
+    void addJavaScript(java.lang.String) -> a
+    void addPluginResult(org.apache.cordova.api.PluginResult,java.lang.String) -> a
+    void enqueueMessage(org.apache.cordova.NativeToJsMessageQueue$JsMessage) -> b
+    void setPaused(boolean) -> a
+    java.lang.String access$200(org.apache.cordova.NativeToJsMessageQueue) -> a
+    org.apache.cordova.CordovaWebView access$300(org.apache.cordova.NativeToJsMessageQueue) -> b
+    org.apache.cordova.api.CordovaInterface access$400(org.apache.cordova.NativeToJsMessageQueue) -> c
+    java.util.LinkedList access$500(org.apache.cordova.NativeToJsMessageQueue) -> d
+org.apache.cordova.NativeToJsMessageQueue$1 -> org.apache.cordova.az:
+org.apache.cordova.NativeToJsMessageQueue$BridgeMode -> org.apache.cordova.ba:
+    void onNativeToJsMessageAvailable() -> a
+org.apache.cordova.NativeToJsMessageQueue$JsMessage -> org.apache.cordova.bb:
+    java.lang.String jsPayloadOrCallbackId -> a
+    org.apache.cordova.api.PluginResult pluginResult -> b
+    int calculateEncodedLength() -> a
+    void encodeAsMessage(java.lang.StringBuilder) -> a
+    void encodeAsJsMessage(java.lang.StringBuilder) -> b
+org.apache.cordova.NativeToJsMessageQueue$LoadUrlBridgeMode -> org.apache.cordova.bc:
+    java.lang.Runnable runnable -> a
+    org.apache.cordova.NativeToJsMessageQueue this$0 -> b
+    void onNativeToJsMessageAvailable() -> a
+org.apache.cordova.NativeToJsMessageQueue$LoadUrlBridgeMode$1 -> org.apache.cordova.bd:
+    org.apache.cordova.NativeToJsMessageQueue$LoadUrlBridgeMode this$1 -> a
+    void run() -> run
+org.apache.cordova.NativeToJsMessageQueue$OnlineEventsBridgeMode -> org.apache.cordova.be:
+    boolean online -> a
+    java.lang.Runnable runnable -> b
+    org.apache.cordova.NativeToJsMessageQueue this$0 -> c
+    void onNativeToJsMessageAvailable() -> a
+org.apache.cordova.NativeToJsMessageQueue$OnlineEventsBridgeMode$1 -> org.apache.cordova.bf:
+    org.apache.cordova.NativeToJsMessageQueue$OnlineEventsBridgeMode this$1 -> a
+    void run() -> run
+org.apache.cordova.NativeToJsMessageQueue$PrivateApiBridgeMode -> org.apache.cordova.bg:
+    java.lang.reflect.Method sendMessageMethod -> a
+    java.lang.Object webViewCore -> b
+    boolean initFailed -> c
+    org.apache.cordova.NativeToJsMessageQueue this$0 -> d
+    void initReflection() -> b
+    void onNativeToJsMessageAvailable() -> a
+org.apache.cordova.NetworkListener -> org.apache.cordova.NetworkListener:
+org.apache.cordova.NetworkManager -> org.apache.cordova.NetworkManager:
+    int NOT_REACHABLE -> a
+    int REACHABLE_VIA_CARRIER_DATA_NETWORK -> b
+    int REACHABLE_VIA_WIFI_NETWORK -> c
+    org.apache.cordova.api.CallbackContext connectionCallbackContext -> f
+    boolean registered -> g
+    android.net.ConnectivityManager sockMan -> d
+    android.content.BroadcastReceiver receiver -> e
+    java.lang.String lastStatus -> h
+    void initialize(org.apache.cordova.api.CordovaInterface,org.apache.cordova.CordovaWebView) -> a
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void onDestroy() -> a
+    void updateConnectionInfo(android.net.NetworkInfo) -> a
+    java.lang.String getConnectionInfo(android.net.NetworkInfo) -> b
+    void sendUpdate(java.lang.String) -> a
+    java.lang.String getType(android.net.NetworkInfo) -> c
+    void access$000(org.apache.cordova.NetworkManager,android.net.NetworkInfo) -> a
+org.apache.cordova.NetworkManager$1 -> org.apache.cordova.bh:
+    org.apache.cordova.NetworkManager this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+org.apache.cordova.Notification -> org.apache.cordova.Notification:
+    int confirmResult -> a
+    android.app.ProgressDialog spinnerDialog -> b
+    android.app.ProgressDialog progressDialog -> c
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void beep(long) -> a
+    void vibrate(long) -> b
+    void alert(java.lang.String,java.lang.String,java.lang.String,org.apache.cordova.api.CallbackContext) -> a
+    void confirm(java.lang.String,java.lang.String,java.lang.String,org.apache.cordova.api.CallbackContext) -> b
+    void activityStart(java.lang.String,java.lang.String) -> a
+    void activityStop() -> c
+    void progressStart(java.lang.String,java.lang.String) -> b
+    void progressValue(int) -> a
+    void progressStop() -> d
+org.apache.cordova.Notification$1 -> org.apache.cordova.bi:
+    org.apache.cordova.api.CordovaInterface val$cordova -> a
+    java.lang.String val$message -> b
+    java.lang.String val$title -> c
+    java.lang.String val$buttonLabel -> d
+    org.apache.cordova.api.CallbackContext val$callbackContext -> e
+    org.apache.cordova.Notification this$0 -> f
+    void run() -> run
+org.apache.cordova.Notification$1$1 -> org.apache.cordova.bj:
+    org.apache.cordova.Notification$1 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.Notification$1$2 -> org.apache.cordova.bk:
+    org.apache.cordova.Notification$1 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+org.apache.cordova.Notification$2 -> org.apache.cordova.bl:
+    org.apache.cordova.api.CordovaInterface val$cordova -> a
+    java.lang.String val$message -> b
+    java.lang.String val$title -> c
+    java.lang.String[] val$fButtons -> d
+    org.apache.cordova.api.CallbackContext val$callbackContext -> e
+    org.apache.cordova.Notification this$0 -> f
+    void run() -> run
+org.apache.cordova.Notification$2$1 -> org.apache.cordova.bm:
+    org.apache.cordova.Notification$2 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.Notification$2$2 -> org.apache.cordova.bn:
+    org.apache.cordova.Notification$2 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.Notification$2$3 -> org.apache.cordova.bo:
+    org.apache.cordova.Notification$2 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.Notification$2$4 -> org.apache.cordova.bp:
+    org.apache.cordova.Notification$2 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+org.apache.cordova.Notification$3 -> org.apache.cordova.bq:
+    org.apache.cordova.api.CordovaInterface val$cordova -> a
+    java.lang.String val$title -> b
+    java.lang.String val$message -> c
+    org.apache.cordova.Notification this$0 -> d
+    void run() -> run
+org.apache.cordova.Notification$3$1 -> org.apache.cordova.br:
+    org.apache.cordova.Notification$3 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+org.apache.cordova.Notification$4 -> org.apache.cordova.bs:
+    org.apache.cordova.Notification val$notification -> a
+    org.apache.cordova.api.CordovaInterface val$cordova -> b
+    java.lang.String val$title -> c
+    java.lang.String val$message -> d
+    org.apache.cordova.Notification this$0 -> e
+    void run() -> run
+org.apache.cordova.Notification$4$1 -> org.apache.cordova.bt:
+    org.apache.cordova.Notification$4 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+org.apache.cordova.SplashScreen -> org.apache.cordova.SplashScreen:
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+org.apache.cordova.StandAlone -> org.apache.cordova.StandAlone:
+    void onCreate(android.os.Bundle) -> onCreate
+org.apache.cordova.Storage -> org.apache.cordova.Storage:
+    android.database.sqlite.SQLiteDatabase myDb -> a
+    java.lang.String path -> b
+    java.lang.String dbName -> c
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void onDestroy() -> a
+    void onReset() -> b
+    void openDatabase(java.lang.String,java.lang.String,java.lang.String,long) -> a
+    void executeSql(java.lang.String,java.lang.String[],java.lang.String) -> a
+    boolean isDDL(java.lang.String) -> a
+    void processResults(android.database.Cursor,java.lang.String) -> a
+org.apache.cordova.api.CallbackContext -> org.apache.cordova.api.CallbackContext:
+    java.lang.String callbackId -> a
+    org.apache.cordova.CordovaWebView webView -> b
+    boolean finished -> c
+    boolean isFinished() -> a
+    java.lang.String getCallbackId() -> b
+    void sendPluginResult(org.apache.cordova.api.PluginResult) -> a
+    void success(org.json.JSONObject) -> a
+    void success(java.lang.String) -> a
+    void success(org.json.JSONArray) -> a
+    void success(byte[]) -> a
+    void success() -> c
+    void error(org.json.JSONObject) -> b
+    void error(java.lang.String) -> b
+    void error(int) -> a
+org.apache.cordova.api.CordovaInterface -> org.apache.cordova.api.CordovaInterface:
+    void startActivityForResult(org.apache.cordova.api.CordovaPlugin,android.content.Intent,int) -> a
+    android.app.Activity getActivity() -> a
+    java.lang.Object onMessage(java.lang.String,java.lang.Object) -> b
+    java.util.concurrent.ExecutorService getThreadPool() -> g
+org.apache.cordova.api.CordovaPlugin -> org.apache.cordova.api.CordovaPlugin:
+    org.apache.cordova.CordovaWebView webView -> q
+    org.apache.cordova.api.CordovaInterface cordova -> r
+    boolean $assertionsDisabled -> s
+    void initialize(org.apache.cordova.api.CordovaInterface,org.apache.cordova.CordovaWebView) -> a
+    boolean execute(java.lang.String,java.lang.String,org.apache.cordova.api.CallbackContext) -> a
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    boolean execute(java.lang.String,org.apache.cordova.CordovaArgs,org.apache.cordova.api.CallbackContext) -> a
+    void onPause(boolean) -> b
+    void onResume(boolean) -> c
+    void onNewIntent(android.content.Intent) -> a
+    void onDestroy() -> a
+    java.lang.Object onMessage(java.lang.String,java.lang.Object) -> a
+    void onActivityResult(int,int,android.content.Intent) -> a
+    boolean onOverrideUrlLoading(java.lang.String) -> e
+    void onReset() -> b
+org.apache.cordova.api.LOG -> org.apache.cordova.api.LOG:
+    int LOGLEVEL -> a
+    void setLogLevel(java.lang.String) -> a
+    boolean isLoggable(int) -> a
+    void v(java.lang.String,java.lang.String) -> a
+    void d(java.lang.String,java.lang.String) -> b
+    void i(java.lang.String,java.lang.String) -> c
+    void w(java.lang.String,java.lang.String) -> d
+    void e(java.lang.String,java.lang.String) -> e
+    void e(java.lang.String,java.lang.String,java.lang.Throwable) -> a
+    void v(java.lang.String,java.lang.String,java.lang.Object[]) -> a
+    void d(java.lang.String,java.lang.String,java.lang.Object[]) -> b
+    void i(java.lang.String,java.lang.String,java.lang.Object[]) -> c
+org.apache.cordova.api.LegacyContext -> org.apache.cordova.api.LegacyContext:
+    org.apache.cordova.api.CordovaInterface cordova -> a
+    android.app.Activity getActivity() -> a
+    java.lang.Object onMessage(java.lang.String,java.lang.Object) -> b
+    void startActivityForResult(org.apache.cordova.api.CordovaPlugin,android.content.Intent,int) -> a
+    java.util.concurrent.ExecutorService getThreadPool() -> g
+org.apache.cordova.api.Plugin -> org.apache.cordova.api.Plugin:
+    org.apache.cordova.api.LegacyContext ctx -> a
+    org.apache.cordova.api.PluginResult execute(java.lang.String,org.json.JSONArray,java.lang.String) -> a
+    boolean isSynch(java.lang.String) -> a
+    void initialize(org.apache.cordova.api.CordovaInterface,org.apache.cordova.CordovaWebView) -> a
+    void setContext(org.apache.cordova.api.CordovaInterface) -> a
+    void setView(org.apache.cordova.CordovaWebView) -> a
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void sendPluginResult(org.apache.cordova.api.PluginResult,java.lang.String) -> a
+org.apache.cordova.api.Plugin$1 -> org.apache.cordova.api.a:
+    java.lang.String val$action -> a
+    org.json.JSONArray val$args -> b
+    java.lang.String val$callbackId -> c
+    org.apache.cordova.api.Plugin this$0 -> d
+    void run() -> run
+org.apache.cordova.api.PluginEntry -> org.apache.cordova.api.PluginEntry:
+    java.lang.String service -> a
+    java.lang.String pluginClass -> b
+    org.apache.cordova.api.CordovaPlugin plugin -> c
+    boolean onload -> d
+    org.apache.cordova.api.CordovaPlugin createPlugin(org.apache.cordova.CordovaWebView,org.apache.cordova.api.CordovaInterface) -> a
+    java.lang.Class getClassByName(java.lang.String) -> a
+    boolean isCordovaPlugin(java.lang.Class) -> a
+org.apache.cordova.api.PluginManager -> org.apache.cordova.api.PluginManager:
+    java.lang.String TAG -> b
+    java.util.HashMap entries -> c
+    org.apache.cordova.api.CordovaInterface ctx -> d
+    org.apache.cordova.CordovaWebView app -> e
+    boolean firstRun -> f
+    java.util.HashMap urlMap -> a
+    void init() -> a
+    void loadPlugins() -> b
+    void clearPluginObjects() -> c
+    void startupPlugins() -> d
+    boolean exec(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    org.apache.cordova.api.CordovaPlugin getPlugin(java.lang.String) -> a
+    void addService(org.apache.cordova.api.PluginEntry) -> a
+    void onPause(boolean) -> a
+    void onResume(boolean) -> b
+    void onDestroy() -> e
+    java.lang.Object postMessage(java.lang.String,java.lang.Object) -> a
+    void onNewIntent(android.content.Intent) -> a
+    boolean onOverrideUrlLoading(java.lang.String) -> b
+    void onReset() -> f
+    void pluginConfigurationMissing() -> g
+org.apache.cordova.api.PluginResult -> org.apache.cordova.api.PluginResult:
+    int status -> b
+    int messageType -> c
+    boolean keepCallback -> d
+    java.lang.String strMessage -> e
+    java.lang.String encodedMessage -> f
+    java.lang.String[] StatusMessages -> a
+    void setKeepCallback(boolean) -> a
+    int getStatus() -> a
+    int getMessageType() -> b
+    java.lang.String getMessage() -> c
+    java.lang.String getStrMessage() -> d
+    boolean getKeepCallback() -> e
+org.apache.cordova.api.PluginResult$Status -> org.apache.cordova.api.PluginResult$Status:
+    org.apache.cordova.api.PluginResult$Status NO_RESULT -> a
+    org.apache.cordova.api.PluginResult$Status OK -> b
+    org.apache.cordova.api.PluginResult$Status CLASS_NOT_FOUND_EXCEPTION -> c
+    org.apache.cordova.api.PluginResult$Status ILLEGAL_ACCESS_EXCEPTION -> d
+    org.apache.cordova.api.PluginResult$Status INSTANTIATION_EXCEPTION -> e
+    org.apache.cordova.api.PluginResult$Status MALFORMED_URL_EXCEPTION -> f
+    org.apache.cordova.api.PluginResult$Status IO_EXCEPTION -> g
+    org.apache.cordova.api.PluginResult$Status INVALID_ACTION -> h
+    org.apache.cordova.api.PluginResult$Status JSON_EXCEPTION -> i
+    org.apache.cordova.api.PluginResult$Status ERROR -> j
+    org.apache.cordova.api.PluginResult$Status[] $VALUES -> k
+    org.apache.cordova.api.PluginResult$Status[] values() -> values
+    org.apache.cordova.api.PluginResult$Status valueOf(java.lang.String) -> valueOf
+org.apache.cordova.file.EncodingException -> org.apache.cordova.file.EncodingException:
+org.apache.cordova.file.FileExistsException -> org.apache.cordova.file.FileExistsException:
+org.apache.cordova.file.InvalidModificationException -> org.apache.cordova.file.InvalidModificationException:
+org.apache.cordova.file.NoModificationAllowedException -> org.apache.cordova.file.NoModificationAllowedException:
+org.apache.cordova.file.TypeMismatchException -> org.apache.cordova.file.TypeMismatchException:

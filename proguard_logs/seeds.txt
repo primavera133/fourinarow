@@ -1,0 +1,79 @@
+com.myrenas.fourinarow.R$drawable: int ic_launcher
+com.myrenas.fourinarow.R$drawable: int icon
+com.myrenas.fourinarow.R$layout: int main
+com.myrenas.fourinarow.R$string: int app_name
+com.myrenas.fourinarow.R$xml: int config
+com.myrenas.fourinarow.fourinarow
+com.myrenas.fourinarow.fourinarow: fourinarow()
+org.apache.cordova.AccelListener
+org.apache.cordova.App
+org.apache.cordova.AudioHandler
+org.apache.cordova.AudioPlayer
+org.apache.cordova.AudioPlayer$MODE
+org.apache.cordova.AudioPlayer$MODE: org.apache.cordova.AudioPlayer$MODE[] values()
+org.apache.cordova.AudioPlayer$MODE: org.apache.cordova.AudioPlayer$MODE valueOf(java.lang.String)
+org.apache.cordova.AudioPlayer$STATE
+org.apache.cordova.AudioPlayer$STATE: org.apache.cordova.AudioPlayer$STATE[] values()
+org.apache.cordova.AudioPlayer$STATE: org.apache.cordova.AudioPlayer$STATE valueOf(java.lang.String)
+org.apache.cordova.AuthenticationToken
+org.apache.cordova.BatteryListener
+org.apache.cordova.BuildConfig
+org.apache.cordova.CameraLauncher
+org.apache.cordova.Capture
+org.apache.cordova.CompassListener
+org.apache.cordova.Config
+org.apache.cordova.ContactAccessor
+org.apache.cordova.ContactAccessorSdk5
+org.apache.cordova.ContactManager
+org.apache.cordova.CordovaArgs
+org.apache.cordova.CordovaChromeClient
+org.apache.cordova.CordovaLocationListener
+org.apache.cordova.CordovaWebView
+org.apache.cordova.CordovaWebView: void setWebViewClient(org.apache.cordova.CordovaWebViewClient)
+org.apache.cordova.CordovaWebView: void setWebChromeClient(org.apache.cordova.CordovaChromeClient)
+org.apache.cordova.CordovaWebView: org.apache.cordova.CordovaChromeClient getWebChromeClient()
+org.apache.cordova.CordovaWebViewClient
+org.apache.cordova.Device
+org.apache.cordova.DirectoryManager
+org.apache.cordova.DroidGap
+org.apache.cordova.DroidGap: DroidGap()
+org.apache.cordova.Echo
+org.apache.cordova.ExifHelper
+org.apache.cordova.FileProgressResult
+org.apache.cordova.FileTransfer
+org.apache.cordova.FileUploadResult
+org.apache.cordova.FileUtils
+org.apache.cordova.GPSListener
+org.apache.cordova.GeoBroker
+org.apache.cordova.Globalization
+org.apache.cordova.GlobalizationError
+org.apache.cordova.HttpHandler
+org.apache.cordova.IceCreamCordovaWebViewClient
+org.apache.cordova.InAppBrowser
+org.apache.cordova.InAppBrowser$InAppBrowserClient
+org.apache.cordova.InAppBrowser$InAppChromeClient
+org.apache.cordova.LinearLayoutSoftKeyboardDetect
+org.apache.cordova.NativeToJsMessageQueue
+org.apache.cordova.NetworkListener
+org.apache.cordova.NetworkManager
+org.apache.cordova.Notification
+org.apache.cordova.SplashScreen
+org.apache.cordova.StandAlone
+org.apache.cordova.Storage
+org.apache.cordova.api.CallbackContext
+org.apache.cordova.api.CordovaInterface
+org.apache.cordova.api.CordovaPlugin
+org.apache.cordova.api.LOG
+org.apache.cordova.api.LegacyContext
+org.apache.cordova.api.Plugin
+org.apache.cordova.api.PluginEntry
+org.apache.cordova.api.PluginManager
+org.apache.cordova.api.PluginResult
+org.apache.cordova.api.PluginResult$Status
+org.apache.cordova.api.PluginResult$Status: org.apache.cordova.api.PluginResult$Status[] values()
+org.apache.cordova.api.PluginResult$Status: org.apache.cordova.api.PluginResult$Status valueOf(java.lang.String)
+org.apache.cordova.file.EncodingException
+org.apache.cordova.file.FileExistsException
+org.apache.cordova.file.InvalidModificationException
+org.apache.cordova.file.NoModificationAllowedException
+org.apache.cordova.file.TypeMismatchException
